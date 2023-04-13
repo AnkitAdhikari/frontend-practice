@@ -119,6 +119,9 @@ body {
 .more {
   color: #ff764d;
 }
+.active {
+  color: #ff764d;
+}
 .cta {
   color: #0000ff;
 }
@@ -134,7 +137,10 @@ body {
   padding: 1.6rem 0;
   font-weight: 600;
 }
-
+.more-content-container1 .nav-link {
+  font-size: 1.8;
+  font-weight: 400;
+}
 .more-content-container2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
