@@ -1,0 +1,121 @@
+/* 
+
+---- 01 TYPOGRAPHY SYSTEM
+
+FONT SIZE SYSTEM (PX)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+
+- font weights
+Default: 400
+medium: 500
+semi-bold 600
+bold 700
+
+- line heights
+deafult: 1
+small: 1.05
+paragraph defalult: 1.6
+
+
+- letter spacing
+-0.5px
+0.75px
+
+SPACING SYSTEM (PX)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+---- 02 clours
+
+primary: #e67e22
+
+
+- Tints:
+#fdf2e9
+#fae5d3
+#eb984e
+- Shades: #cf711f
+- Accents;
+- Greys;
+#6f6f6f (lightest grey allowed on #fdf2e9
+#555
+#333
+
+---- 05 SHADOWS 
+0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+
+---- 06 BORDER-RADIUS
+Defalut: 9px
+Medium: 11px
+
+
+---- 07 WHITESPACE
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+#fbffa7
+
+#ff764d
+
+#b1c5ff
+
+#d5b3ff
+
+#b6ffc0
+
+#0000ff
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1 rem = 10px */
+}
+body {
+  line-height: 1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #000;
+  background-color: #f3f3f3;
+}
+.site-wrapper {
+  max-width: 150rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+  width: 100%;
+  padding: 2.4rem 4.8rem;
+  background-color: #fff;
+}
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list-right,
+.nav-list-left {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.more {
+  color: #ff764d;
+}
+.cta {
+  color: #0000ff;
+}
