@@ -56,6 +56,8 @@ Medium: 11px
 
 #ff764d
 
+#fd5948
+
 #b1c5ff
 
 #d5b3ff
@@ -80,6 +82,10 @@ body {
   font-weight: 400;
   color: #000;
   background-color: #f3f3f3;
+}
+
+.body::selection {
+  background-color: #0000ff;
 }
 .site-wrapper {
   max-width: 150rem;
@@ -156,4 +162,208 @@ body {
 .feature-discription {
   line-height: 1.6;
   font-size: 1.8rem;
+}
+
+main {
+  background-color: #fff;
+  margin: 0.3rem 0;
+}
+
+.dummy-nav {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+  padding: 2.4rem 4.8rem;
+}
+
+.hero-img-container {
+  width: 85%;
+  margin: auto auto;
+  position: relative;
+}
+
+.hero-img-container::after {
+  content: "Albeton";
+  font-size: 9.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #fd5948;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.description-container {
+  width: 50%;
+  margin: 8rem auto 25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.description-main {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.description-secondary {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.hero-img-container2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  position: relative;
+  padding: 0 6rem;
+  column-gap: 10rem;
+}
+
+.hero-img-container2::after {
+  content: "";
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fbffa7;
+  width: 75%;
+  height: 150%;
+  z-index: 0;
+}
+
+.hero-img-container2 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container2-img-primary,
+.contianer2-img-secondary {
+  width: 100%;
+  z-index: 1;
+}
+
+.description-container.container-2 {
+  width: 50%;
+  margin: 25rem auto 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.hero-img-container3 {
+  width: 65%;
+  margin: auto auto;
+  position: relative;
+}
+.hero-img-container3::after {
+  content: "";
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  background-color: #0000ff;
+  border-radius: 50%;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  z-index: 2;
+}
+.hero-img-container3::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(65%, -50%);
+  z-index: 3;
+  border-top: 25px solid transparent;
+  border-left: 50px solid #f3f3f3;
+  border-bottom: 25px solid transparent;
+}
+
+.hero-img-container2.container-4 {
+  margin: 25rem auto 25rem;
+  grid-template-columns: 40fr 60fr;
+  padding: 0px 6rem;
+}
+.hero-img-container2.container-4 img {
+  width: 80%;
+}
+
+.hero-img-container2.container-4::after {
+  left: 0%;
+  background-color: #b6ffc0;
+  height: 135%;
+  width: 55%;
+}
+
+.img-flex-col-container {
+  flex-direction: column;
+  gap: 12rem;
+}
+
+.hero-img-container-5 {
+  width: 85%;
+  margin: auto auto;
+  position: relative;
+}
+
+.hero-img-container2.container-6 {
+  grid-template-columns: 0.8fr 1fr;
+  column-gap: 10rem;
+  padding-right: 0;
+  margin: 20rem auto 20rem;
+}
+
+.hero-img-container2.container-6 img {
+  width: 100%;
+}
+
+.hero-img-container2.container-6::after {
+  height: 170%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background-color: #d5b3ff;
+}
+
+.description-container.container-7 {
+  margin-bottom: 16rem;
+}
+
+.last-cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 12rem;
+  height: 60rem;
+}
+
+.last-cta div {
+  background-color: #b1c5ff;
+}
+
+.background {
+  background-image: url("https://ableton-production.imgix.net/about/photo-8.jpg");
+  background-size: cover;
+  background-position: right;
+}
+
+.cta-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.2rem;
+  gap: 5rem;
+  padding: 6rem;
+  line-height: 1.3;
+}
+
+.section-hero {
+  padding-bottom: 15rem;
 }
